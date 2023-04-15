@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OtherPackage.OtherActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#1F6BB8">
+
+        <ImageView
+            android:id="@+id/backButtonOther"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+        <TextView
+            android:id="@+id/quiz_topic_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Other Applications"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/Calculator_button"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="@drawable/calculator_icon2"
+                android:contentDescription="TODO" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Calculator Application"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="200dp"
+                android:layout_marginBottom="400dp"
+                android:textStyle="bold"
+                android:textSize="19dp"
+                android:layout_below="@+id/Calculator_button"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/dice_application"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="220dp"
+                android:background="@drawable/dice_icon" />
+
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="200dp"
+                android:text="Dice Application"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="250dp"
+                android:layout_marginBottom="400dp"
+                android:textStyle="bold"
+                android:textSize="19dp"
+                android:layout_below="@+id/dice_application"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/background_application"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="210dp"
+                android:layout_marginTop="260dp"
+                android:background="@drawable/background_icon" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Background Application"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="190dp"
+                android:layout_marginBottom="140dp"
+                android:textStyle="bold"
+                android:textSize="19dp"
+                android:layout_below="@+id/background_application"/>
+        </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/temp_bottom_navigation_other"
+                android:id="@+id/container">
+            </FrameLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/temp_bottom_navigation_other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:menu="@menu/bottom_nav_menu" >
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    </RelativeLayout>
+</LinearLayout>

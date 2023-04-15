@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".QuizPackage.QuizActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#1F6BB8">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+        <TextView
+            android:id="@+id/quiz_topic_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Topic Name"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/baseline_timer_24" />
+
+            <TextView
+                android:id="@+id/quiz_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="10:00"
+                android:textColor="@color/teal_200" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/questionNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/white_border"
+        android:elevation="1dp"
+        android:gravity="center"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:text="1/10"
+        android:textColor="@color/teal_200"/>
+
+    <TextView
+        android:id="@+id/Questions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/yellow_border"
+        android:gravity="center"
+        android:minHeight="100dp"
+        android:text="Questions"
+        android:padding="20dp"
+        android:textStyle="bold|italic"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"/>
+
+    <ImageView
+        android:id="@+id/questionImageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+
+    <RadioGroup
+        android:id="@+id/answer_options_group"
+        android:layout_width="match_parent"
+        android:layout_marginTop="0dp"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/firstOption"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:background="@drawable/white_border"
+            android:text="Answer option 1"
+            android:textAlignment="center"/>
+
+        <RadioButton
+            android:id="@+id/secondOption"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:background="@drawable/white_border"
+            android:text="Answer Option 2"
+            android:textAlignment="center"/>
+
+        <RadioButton
+            android:id="@+id/thirdOption"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:background="@drawable/white_border"
+            android:text="Answer Option 3"
+            android:textAlignment="center" />
+
+        <RadioButton
+            android:id="@+id/fourthOption"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:background="@drawable/white_border"
+            android:text="Answer Option 4"
+            android:textAlignment="center"/>
+
+    </RadioGroup>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/nextQuestionButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:background="@drawable/bluerectangle"
+                android:text="Next Question" />
+        </LinearLayout>

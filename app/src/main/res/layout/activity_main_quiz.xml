@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/quizIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/quiz_icon" />
+
+    <TextView
+        android:id="@+id/quizIconTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/purple_200"
+        android:textSize="20dp"
+        android:text="Choose Quiz Topic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:weightSum="2" >
+
+        <LinearLayout
+            android:id="@+id/javaTest"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/rectangleborder"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_height="80dp"
+                app:srcCompat="@drawable/java_icon" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                android:text="Java" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:id="@+id/androidTest"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/rectangleborder"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_height="80dp"
+                app:srcCompat="@drawable/android_icon2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="Android" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/startQuizButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/bluerectangle"
+        android:layout_marginEnd="20dp"
+        android:text="Start Quiz" />
+</LinearLayout>

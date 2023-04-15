@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<group
+    android:checkableBehavior="single">
+
+    <item
+        android:id="@+id/ham_home_nav"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/ham_file_nav"
+        android:icon="@drawable/baseline_file_copy_24"
+        android:title="File" />
+
+    <item
+        android:id="@+id/ham_quiz_nav"
+        android:icon="@drawable/baseline_quiz_24"
+        android:title="Quiz" />
+
+    <item
+        android:id="@+id/ham_account_nav"
+        android:icon="@drawable/baseline_manage_accounts_24"
+        android:title="Account" />
+</group>
+
+    <item android:title="Other Applications">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/calculator_ham_nav"
+                    android:icon="@drawable/baseline_calculate_24"
+                    android:title="Calculator" />
+                <item
+                    android:id="@+id/diceRoller_ham_nav"
+                    android:icon="@drawable/baseline_calculate_24"
+                    android:title="Dice Roller" />
+                <item
+                    android:id="@+id/changeBack_ham_nav"
+                    android:icon="@drawable/baseline_colorize_24"
+                    android:title="Change Background" />
+            </group>
+        </menu>
+    </item>
+
+</menu>
